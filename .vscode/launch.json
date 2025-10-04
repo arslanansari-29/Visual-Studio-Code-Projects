@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SmithLab",
+            "request": "launch",
+            "mainClass": "SmithLab",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "KaprekarLab",
+            "request": "launch",
+            "mainClass": "KaprekarLab",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "Kaprekar",
+            "request": "launch",
+            "mainClass": "Kaprekar",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
             "name": "Cat",
             "request": "launch",
             "mainClass": "Cat",
