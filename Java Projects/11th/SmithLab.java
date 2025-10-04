@@ -13,7 +13,7 @@ public class SmithLab {
             if(isComposite(i) && sumOfDigits(i) == sumOfFactorials(i))
                 System.out.print(i + ", ");
         }
-
+        scanner.close();
     }
 
     static boolean isComposite(int n) {
