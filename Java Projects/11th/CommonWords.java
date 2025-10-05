@@ -3,22 +3,20 @@ import java.util.StringTokenizer;
 public class CommonWords{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the paragraph: ");
-        String p = sc.nextLine().toUpperCase();
-        p = p.trim();
+        System.out.print("INPUT: ");
+        String p = sc.nextLine().toUpperCase().trim();
+        System.out.println("OUTPUT: ");
         char last = p.charAt(p.length() - 1);
         if(".?!".indexOf(last) == -1){
             System.out.println("INVALID INPUT");
-            return;
+            System.exit(0);
         }
         StringTokenizer st = new StringTokenizer(p, ".?!");
         int count = st.countTokens();
         if(count != 2){
             System.out.println("INVALID PARAGRAPH");
-            return;
+            System.exit(0);
         }
-        int count1 = 0;
-        int count2 = 0;
         String s1 = st.nextToken();
         String s2 = st.nextToken();
         StringTokenizer s = new StringTokenizer(s1, " ,");
@@ -49,6 +47,7 @@ public class CommonWords{
                 break;
         }
         System.out.println();
+        sc.close();
     }
     public static boolean search(String w, String a[]){
         for(int i = 0; i < a.length; i++){
