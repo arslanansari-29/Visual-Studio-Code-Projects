@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "KaprekarLab",
+            "request": "launch",
+            "mainClass": "KaprekarLab",
+            "projectName": "Visual-Studio-Code-Projects_6970931a"
+        },
+        {
+            "type": "java",
             "name": "SmithLab",
             "request": "launch",
             "mainClass": "SmithLab",
