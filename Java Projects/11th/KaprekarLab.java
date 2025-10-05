@@ -28,6 +28,6 @@ public class KaprekarLab {
     }
 
     static boolean isKaprekar(int n) {
-        return n==(n*n/((int)Math.pow(10,Utils.digitCount(n*n)/2)) + n*n%((int)Math.pow(10,Utils.digitCount(n*n)/2)));
+        return n==(n*n/((int)Math.pow(10,Utils.digitCount(n))) + n*n%((int)Math.pow(10,Utils.digitCount(n))));
     }
 }
