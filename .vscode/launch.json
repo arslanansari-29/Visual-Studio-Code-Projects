@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CommonWords",
+            "request": "launch",
+            "mainClass": "CommonWords",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "MatrixBoundary",
+            "request": "launch",
+            "mainClass": "MatrixBoundary",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
             "name": "KaprekarLab",
             "request": "launch",
             "mainClass": "KaprekarLab",
