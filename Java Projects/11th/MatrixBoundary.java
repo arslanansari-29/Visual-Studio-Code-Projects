@@ -4,7 +4,7 @@ class MatrixBoundary{
         Scanner sc = new Scanner(System.in);
         System.out.println("INPUT: ");
         System.out.print("N = ");
-        int n = Integer.parseInt(sc.nextLine());
+        int n = sc.nextInt();
         System.out.println("OUTPUT: ");
         if(n < 4 || n > 9){
             System.out.println("SIZE OUT OF RANGE");
@@ -16,7 +16,7 @@ class MatrixBoundary{
         int p = 1;
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
-                m[i][j] = Integer.parseInt(sc.nextLine());
+                m[i][j] = sc.nextInt();
                 if(i == 0 || j == 0 || i == n - 1 || j == n - 1)
                     b[index++] = m[i][j];
                 else

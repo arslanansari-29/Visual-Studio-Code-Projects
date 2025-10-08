@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
+@SuppressWarnings("unused")
 public class DelimiterScanner {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

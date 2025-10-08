@@ -3,6 +3,24 @@ public class Utils {
         return String.valueOf(Math.abs(number)).length();
     }
 
+    public static int sumOfDigits(int number) {
+        int sum = 0;
+        while (number != 0) {
+            sum += number % 10;
+            number /= 10;
+        }
+        return sum;
+    }
+
+    public static int productOfDigits(int number) {
+        int product = 1;
+        while (number != 0) {
+            product *= number % 10;
+            number /= 10;
+        }
+        return product;
+    }    
+
     public static int reverse(int number) {
         int reversed = 0;
         while (number != 0) {
@@ -31,23 +49,5 @@ public class Utils {
             if (number % i == 0) return false;
         }
         return true;
-    }
-
-    public static int sumOfDigits(int number) {
-        int sum = 0;
-        while (number != 0) {
-            sum += number % 10;
-            number /= 10;
-        }
-        return sum;
-    }
-
-    public static int productOfDigits(int number) {
-        int product = 1;
-        while (number != 0) {
-            product *= number % 10;
-            number /= 10;
-        }
-        return product;
     }
 }

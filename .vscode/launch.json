@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Goldbach",
+            "request": "launch",
+            "mainClass": "Goldbach",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "MatrixSort",
+            "request": "launch",
+            "mainClass": "MatrixSort",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "UniqueDigitInteger",
+            "request": "launch",
+            "mainClass": "UniqueDigitInteger",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
             "name": "CommonWords",
             "request": "launch",
             "mainClass": "CommonWords",

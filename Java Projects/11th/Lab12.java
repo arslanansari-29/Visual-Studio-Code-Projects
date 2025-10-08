@@ -32,5 +32,6 @@ public class Lab12 {
                 System.out.println();
             }
         }
+        sc.close();
     }
 }
