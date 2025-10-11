@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UniqueMatrix",
+            "request": "launch",
+            "mainClass": "UniqueMatrix",
+            "projectName": "Visual-Studio-Code-Projects_6970931a"
+        },
+        {
+            "type": "java",
+            "name": "Set2",
+            "request": "launch",
+            "mainClass": "Set2",
+            "projectName": "Visual-Studio-Code-Projects_6970931a"
+        },
+        {
+            "type": "java",
             "name": "Goldbach",
             "request": "launch",
             "mainClass": "Goldbach",
