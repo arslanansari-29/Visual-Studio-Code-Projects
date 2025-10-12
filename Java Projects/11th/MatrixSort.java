@@ -8,7 +8,7 @@ public class MatrixSort
         int m = in.nextInt();
         if (m <= 3 || m >= 10) {
             System.out.println("THE MATRIX SIZE IS OUT OF RANGE.");
-            return;
+            System.exit(0);
         }
         int a[][] = new int[m][m];
         System.out.println("ENTER ELEMENTS OF MATRIX");
@@ -18,7 +18,7 @@ public class MatrixSort
                 a[i][j] = in.nextInt();
                 if (a[i][j] < 0) {
                     System.out.println("INVALID INPUT");
-                    return;
+                    System.exit(0);
                 }
             }
         }
