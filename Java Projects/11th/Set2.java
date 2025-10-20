@@ -3,9 +3,9 @@ class Set2{
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         System.out.print("M = ");
-        int m = Integer.parseInt(in.nextLine());
+        int m = in.nextInt();
         System.out.print("N = ");
-        int n = Integer.parseInt(in.nextLine());
+        int n = in.nextInt();
         if(m < 3 || n < 3 || m > 19 || n > 19){
             System.out.println("SIZE OUT OF RANGE");
             System.exit(0);
@@ -16,7 +16,7 @@ class Set2{
         System.out.println("ENTER ELEMENTS OF THE MATRIX:");
         for(int i = 0; i < m; i++){
             for(int j = 0; j < n; j++){
-                a[i][j] = Integer.parseInt(in.nextLine());
+                a[i][j] = in.nextInt();
                 b[index++] = a[i][j];
             }
         }

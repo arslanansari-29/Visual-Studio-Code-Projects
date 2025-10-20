@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TT",
+            "request": "launch",
+            "mainClass": "TT",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "Set2",
+            "request": "launch",
+            "mainClass": "Set2",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
             "name": "UniqueMatrix",
             "request": "launch",
             "mainClass": "UniqueMatrix",

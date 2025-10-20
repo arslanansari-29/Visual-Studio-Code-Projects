@@ -3,7 +3,7 @@ class Set1{
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);
         System.out.print("m = ");
-        int m = Integer.parseInt(in.nextLine());
+        int m = in.nextInt();
         if(m < 3 || m > 9){
             System.out.println("THE MATRIX SIZE IS OUT OF RANGE.");
             System.exit(0);
@@ -14,7 +14,7 @@ class Set1{
         System.out.println("Enter matrix elements:");
         for(int i = 0; i < m; i++){
             for(int j = 0; j < m; j++){
-                a[i][j] = Integer.parseInt(in.nextLine());
+                a[i][j] = in.nextInt();
                 if(i == j)
                     left += a[i][j];
                 if(i + j == m - 1)
