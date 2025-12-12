@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Decode",
+            "request": "launch",
+            "mainClass": "Decode",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "Clock",
+            "request": "launch",
+            "mainClass": "Clock",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "MovieTicketReservation",
+            "request": "launch",
+            "mainClass": "MovieTicketReservation",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "Movie",
+            "request": "launch",
+            "mainClass": "Movie",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "DecodeMessage",
+            "request": "launch",
+            "mainClass": "DecodeMessage",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
             "name": "TT",
             "request": "launch",
             "mainClass": "TT",

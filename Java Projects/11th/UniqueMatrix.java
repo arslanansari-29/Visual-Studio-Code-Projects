@@ -16,5 +16,6 @@ public class UniqueMatrix {
             }
             System.out.println();
         }
+        sc.close();
     }
 }
