@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "square_series",
+            "request": "launch",
+            "mainClass": "square_series",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "palindrome",
+            "request": "launch",
+            "mainClass": "palindrome",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "table",
+            "request": "launch",
+            "mainClass": "table",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "print_number",
+            "request": "launch",
+            "mainClass": "print_number",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
             "name": "Decode",
             "request": "launch",
             "mainClass": "Decode",
