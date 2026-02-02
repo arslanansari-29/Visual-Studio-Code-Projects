@@ -26,7 +26,7 @@ public class AlphabeticWordArrange {
                     ar[j] = temp;
                 }
             }
-        }
+        } 
         System.out.println("LENGTH = "+wordcount);
         System.out.println("REARRANGED SENTENCE");
         for(int i=0; i<wordcount; i++) {
