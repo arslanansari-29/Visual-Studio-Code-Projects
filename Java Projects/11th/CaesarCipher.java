@@ -6,7 +6,7 @@ class CaesarCipher{
         String s = in.nextLine();
         if(s.length() < 4 || s.length() > 99){
             System.out.println("INVALID LENGTH");
-            return;
+            System.exit(0);
         }
         String c = "";
         for(int i = 0; i < s.length(); i++){
