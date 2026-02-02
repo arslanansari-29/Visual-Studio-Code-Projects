@@ -20,5 +20,6 @@ class CaesarCipher{
         }
         System.out.println("The cipher text is:");
         System.out.println(c);
+        in.close();
     }
 }
