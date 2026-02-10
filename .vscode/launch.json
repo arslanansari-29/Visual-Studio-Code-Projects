@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BinaryFileReadNames",
+            "request": "launch",
+            "mainClass": "BinaryFileReadNames",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "BinaryFileWriteNames",
+            "request": "launch",
+            "mainClass": "BinaryFileWriteNames",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "CharacterFileWriteNames",
+            "request": "launch",
+            "mainClass": "CharacterFileWriteNames",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "FileReadNames",
+            "request": "launch",
+            "mainClass": "FileReadNames",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "FileWriteNames",
+            "request": "launch",
+            "mainClass": "FileWriteNames",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "series1_rec",
+            "request": "launch",
+            "mainClass": "series1_rec",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "series1",
+            "request": "launch",
+            "mainClass": "series1",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "print1",
+            "request": "launch",
+            "mainClass": "print1",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "Chamar",
+            "request": "launch",
+            "mainClass": "Chamar",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
             "name": "BinarySearch",
             "request": "launch",
             "mainClass": "BinarySearch",
