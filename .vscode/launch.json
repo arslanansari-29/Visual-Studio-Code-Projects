@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Mix",
+            "request": "launch",
+            "mainClass": "Mix",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "EqMat",
+            "request": "launch",
+            "mainClass": "EqMat",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
             "name": "BinaryFileReadNames",
             "request": "launch",
             "mainClass": "BinaryFileReadNames",
