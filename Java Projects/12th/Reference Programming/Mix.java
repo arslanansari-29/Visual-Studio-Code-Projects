@@ -9,6 +9,7 @@ public class Mix {
     }
 
     void feedword() {
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a word:");
         wrd = sc.next().toUpperCase();

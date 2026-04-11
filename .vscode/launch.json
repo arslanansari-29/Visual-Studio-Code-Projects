@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Prog2",
+            "request": "launch",
+            "mainClass": "Prog2",
+            "projectName": "Visual-Studio-Code-Projects_6970931a"
+        },
+        {
+            "type": "java",
+            "name": "Time",
+            "request": "launch",
+            "mainClass": "Time",
+            "projectName": "Visual-Studio-Code-Projects_6970931a"
+        },
+        {
+            "type": "java",
             "name": "Time",
             "request": "launch",
             "mainClass": "Time",

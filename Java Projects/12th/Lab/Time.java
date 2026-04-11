@@ -11,7 +11,7 @@ public class Time {
             System.out.println("INVALID INPUT");
             System.exit(0);
         }
-        if(s.charAt(s.length()-2)=='P') {
+        else if(s.charAt(s.length()-2)=='P') {
             if(h!=12) {
                 h+=12;
                 System.out.println(h+":"+m);
@@ -22,6 +22,8 @@ public class Time {
         else {
             if(h==12)
                 System.out.println("00"+s.substring(s.indexOf(':'),s.length()-2));
+            else if(s.substring(0,s.indexOf(':')).length()==1)
+                System.out.println("0"+s.substring(0,s.length()-2));
             else
                 System.out.println(s.substring(0,s.length()-2));
         }
