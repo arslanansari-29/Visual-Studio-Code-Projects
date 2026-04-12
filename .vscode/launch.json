@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Pangram",
+            "request": "launch",
+            "mainClass": "Pangram",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
             "name": "Prog2",
             "request": "launch",
             "mainClass": "Prog2",
