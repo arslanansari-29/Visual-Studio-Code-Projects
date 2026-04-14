@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FindDate",
+            "request": "launch",
+            "mainClass": "FindDate",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "DAY",
+            "request": "launch",
+            "mainClass": "DAY",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
             "name": "Pangram",
             "request": "launch",
             "mainClass": "Pangram",
