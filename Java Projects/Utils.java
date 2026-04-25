@@ -57,4 +57,18 @@ public class Utils {
         }
         return -1;
     }
+
+    public static String quickSort(String str) {
+        if (str.length() <= 1) return str;
+        char pivot = str.charAt(0);
+        String less = "";
+        String equal = "";
+        String greater = "";
+        for (char c : str.toCharArray()) {
+            if (c < pivot) less += c;
+            else if (c == pivot) equal += c;
+            else greater += c;
+        }
+        return quickSort(less) + equal + quickSort(greater);
+    }
 }
