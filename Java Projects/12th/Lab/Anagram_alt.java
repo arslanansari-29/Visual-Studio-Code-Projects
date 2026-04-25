@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Anagram {
+public class Anagram_alt {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("INPUT: ");
@@ -9,27 +9,26 @@ public class Anagram {
         System.out.print("Enter second string: ");
         String s2 = sc.nextLine().trim().toLowerCase();
         System.out.print("OUTPUT: ");
-        if(!valid(s1) || !valid(s2)) {
+        if(valid(s1) && valid(s2)) {
+            if(sort(s1).compareToIgnoreCase(sort(s2)) == 0)
+                System.out.println("STRINGS ARE ANAGRAMS.");
+            else 
+                System.out.println("STRINGS ARE NOT ANAGRAMS.");
+        } 
+        else
             System.out.println("INVALID CHARACTERS IN STRING. INVALID INPUT.");
-            return;
-        }
-        boolean f=true;
-        for(char ch = 'a'; ch<='z'; ch++) {
-            int c1 = 0, c2 = 0;
-            for(int i=0; i<s1.length(); i++) {
-                if(ch == s1.charAt(i))
-                    c1++;
-            }
-            for(int i=0; i<s2.length(); i++) {
-                if(ch== s2.charAt(i))
-                    c2++;
-            }
-            if(c1 != c2) {
-                f=false;
-                break;
+    }
+
+    public static String sort(String str) {
+        for(int i = 0; i < str.length() - 1; i++) {
+            for(int j = 0; j < str.length() - i - 1; j++) {
+                if(str.charAt(j) > str.charAt(j + 1)) {
+                    char temp = str.charAt(j);
+                    str = str.substring(0, j) + str.charAt(j + 1) + temp + str.substring(j + 2);
+                }
             }
         }
-        System.out.println(f?"STRINGS ARE ANAGRAMS":"STRINGS ARE NOT ANAGRAMS");
+        return str.trim();
     }
 
     public static boolean valid(String s) {
