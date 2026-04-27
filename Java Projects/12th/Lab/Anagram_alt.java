@@ -17,6 +17,7 @@ public class Anagram_alt {
         } 
         else
             System.out.println("INVALID CHARACTERS IN STRING. INVALID INPUT.");
+        sc.close();
     }
 
     public static String sort(String str) {

@@ -11,6 +11,7 @@ public class Anagram {
         System.out.print("OUTPUT: ");
         if(!valid(s1) || !valid(s2)) {
             System.out.println("INVALID CHARACTERS IN STRING. INVALID INPUT.");
+            sc.close();
             return;
         }
         boolean f=true;
@@ -30,6 +31,7 @@ public class Anagram {
             }
         }
         System.out.println(f?"STRINGS ARE ANAGRAMS":"STRINGS ARE NOT ANAGRAMS");
+        sc.close();
     }
 
     public static boolean valid(String s) {
