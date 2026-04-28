@@ -7,12 +7,12 @@ public class Rotate {
         int M = sc.nextInt();
         System.out.print("N = ");
         int N = sc.nextInt();
-        if((M < 2 || M > 10) || (N < 2 || N > 10)) {
+        if((M <= 2 || M >= 10) || (N <= 2 || N >= 10)) {
             System.out.print("SIZE IS OUT OF RANGE. INVALID ENTRY.");
             sc.close();
             return;
         }
-        System.out.println("Enter elements in the matrix: ");
+        System.out.println("OUTPUT: Enter elements in the matrix: ");
         int[][] A = new int[M][N];
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
@@ -27,7 +27,7 @@ public class Rotate {
             }
         }
         int h=A[0][0], r=0, c=0;
-        System.out.println("OUTPUT: ");
+        System.out.println("FORMED MATRIX AFTER ROTATING: ");
         for(int i=0; i<M; i++) {
             for(int j=0; j<N; j++) {
                 if(A[i][j] > h) {
