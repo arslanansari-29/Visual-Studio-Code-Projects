@@ -3,21 +3,30 @@ import java.util.Scanner;
 public class Rotate {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("INPUT: M = ");
+        System.out.print("INPUT: ");
+        System.out.print("\tM = ");
         int M = sc.nextInt();
-        System.out.print("N = ");
+        System.out.print("\tN = ");
         int N = sc.nextInt();
         if((M <= 2 || M >= 10) || (N <= 2 || N >= 10)) {
-            System.out.print("SIZE IS OUT OF RANGE. INVALID ENTRY.");
+            System.out.print("\tSIZE IS OUT OF RANGE. INVALID ENTRY.");
             sc.close();
             return;
         }
-        System.out.println("OUTPUT: Enter elements in the matrix: ");
+        System.out.println("\tEnter elements in the matrix: ");
         int[][] A = new int[M][N];
         for (int i = 0; i < M; i++) {
+            System.out.print("\t");
             for (int j = 0; j < N; j++) {
                 A[i][j] = sc.nextInt();
             }
+        }
+        System.out.println("\tORIGINAL MATRIX: ");
+        for(int i=0; i<M; i++) {
+            for(int j=0; j<N; j++) {
+                System.out.print("\t"+A[i][j]+"\t");
+            }
+            System.out.println();
         }
         for(int i=0; i<M; i++) {
             for(int j=0; j<N; j++) {
@@ -27,7 +36,7 @@ public class Rotate {
             }
         }
         int h=A[0][0], r=0, c=0;
-        System.out.println("FORMED MATRIX AFTER ROTATING: ");
+        System.out.println("\tFORMED MATRIX AFTER ROTATING: ");
         for(int i=0; i<M; i++) {
             for(int j=0; j<N; j++) {
                 if(A[i][j] > h) {
@@ -35,11 +44,11 @@ public class Rotate {
                     r = i;
                     c = j;
                 }
-                System.out.print(A[i][j]+"\t");
+                System.out.print("\t"+A[i][j]+"\t");
             }
             System.out.println();
         }
-        System.out.println("Highest element: " + h + " (Row: " + r + " and Column: " + c + ")");
+        System.out.println("\tHighest element: " + h + " (Row: " + r + " and Column: " + c + ")");
         sc.close();
     }
 }
