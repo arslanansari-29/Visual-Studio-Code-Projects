@@ -9,22 +9,21 @@ public class Rotate270 {
         System.out.print("\tN = ");
         int N = sc.nextInt();
         if((M < 2 || M >= 10) || (N < 2 || N >= 10)) {
-            System.out.print("\tINVALID INPUT.");
+            System.out.print("OUTPUT: INVALID INPUT.");
             sc.close();
             return;
         }
-        System.out.println("\tENTER ELEMENTS");
+        System.out.print("ENTER ELEMENTS: ");
         int[][] A = new int[M][N];
         int[][] B = new int[N][M];
         for (int i = 0; i < M; i++) {
-            System.out.print("\t");
             for (int j = 0; j < N; j++) {
                 A[i][j] = sc.nextInt();
             }
         }
-        System.out.println("\tORIGINAL MATRIX: ");
+        System.out.println(" OUTPUT: ORIGINAL MATRIX: ");
         display(A, M, N);
-        System.out.println("ROTATED MATRIX (270 DEGREE)");
+        System.out.println("ROTATED MATRIX (270 ANTI CLOCK WISE)");
         int sum=0;
         for(int i=0; i<N; i++) {
             for(int j=0; j<M; j++) {
@@ -34,7 +33,7 @@ public class Rotate270 {
             }
         }
         display(B, N, M);
-        System.out.println("SUM OF ODD ELEMENTS: "+sum  );
+        System.out.println("SUM OF THE ODD ELEMENTS = "+sum  );
         sc.close();
     }
 
