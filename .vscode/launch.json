@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MorseCode",
+            "request": "launch",
+            "mainClass": "MorseCode",
+            "projectName": "Visual-Studio-Code-Projects_6970931a"
+        },
+        {
+            "type": "java",
+            "name": "MorseCodeConverter",
+            "request": "launch",
+            "mainClass": "MorseCodeConverter",
+            "projectName": "Visual-Studio-Code-Projects_6970931a"
+        },
+        {
+            "type": "java",
             "name": "Anagram_alt",
             "request": "launch",
             "mainClass": "Anagram_alt",
