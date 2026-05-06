@@ -21,7 +21,7 @@ public class Rotate270 {
                 A[i][j] = sc.nextInt();
             }
         }
-        System.out.println(" OUTPUT: ORIGINAL MATRIX: ");
+        System.out.println("OUTPUT: ORIGINAL MATRIX: ");
         display(A, M, N);
         System.out.println("ROTATED MATRIX (270 ANTI CLOCK WISE)");
         int sum=0;
@@ -40,7 +40,7 @@ public class Rotate270 {
     public static void display(int[][] A, int M, int N) {
         for(int i=0; i<M; i++) {
             for(int j=0; j<N; j++) {
-                System.out.print("\t"+A[i][j]+"\t");
+                System.out.print(A[i][j]+"\t");
             }
             System.out.println();
         }
