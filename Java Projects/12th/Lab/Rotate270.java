@@ -32,7 +32,7 @@ public class Rotate270 {
                     sum+=B[i][j];
             }
         }
-        display(B, N, M);
+        display(B, N, M); 
         System.out.println("SUM OF THE ODD ELEMENTS = "+sum  );
         sc.close();
     }
