@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Mirror",
+            "request": "launch",
+            "mainClass": "Mirror",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "Rotate270",
+            "request": "launch",
+            "mainClass": "Rotate270",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
+            "name": "Keystrokes",
+            "request": "launch",
+            "mainClass": "Keystrokes",
+            "projectName": "Visual Studio Code Projects_d8d11ffa"
+        },
+        {
+            "type": "java",
             "name": "Rotate270",
             "request": "launch",
             "mainClass": "Rotate270",
