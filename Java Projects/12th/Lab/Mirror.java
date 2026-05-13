@@ -14,10 +14,12 @@ public class Mirror {
             sc.close();
             return;
         }
+        System.out.print("\t");
         for(int i=0; i<M; i++) {
             for(int j=0; j<N; j++) {
                 A[i][j] = sc.nextInt();
             }
+            System.out.print("\t");
         }
         System.out.println("OUTPUT: ORIGINAL MATRIX ");
         display(A, M, N);
