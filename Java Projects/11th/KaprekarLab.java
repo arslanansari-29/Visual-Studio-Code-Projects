@@ -13,7 +13,7 @@ public class KaprekarLab {
             System.exit(0);
         }
         int freq = 0;
-        System.out.println("THE KAPREkAR NUMBERS ARE: ");
+        System.out.println("THE KAPREKAR NUMBERS ARE: ");
         for(int i=P; i<=Q; i++) {
             if(isKaprekar(i)) {
                 if(freq == 0)
