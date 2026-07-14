@@ -34,5 +34,6 @@ public class Magic {
             System.out.println();
         }
         System.out.print("SUM = " + (N*(N*N+1)/2));
+        scanner.close();
     }
 }
