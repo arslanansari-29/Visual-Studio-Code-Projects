@@ -18,7 +18,6 @@ public class SaddlePoint {
             }
             System.out.println();
         }
-        boolean flag = false;
-        for(int i =0; i<N && )
+        // boolean flag = false;
     }
 }
