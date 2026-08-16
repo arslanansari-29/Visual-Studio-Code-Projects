@@ -19,35 +19,20 @@ public class SpiralFill {
             return;
         }
         int[][] mat = new int[n][n];
-        if(choice == 1)
-            fillClockwise(mat, n);
-        else
-            fillAnticlockwise(mat, n);
+        int[] dr = {0, 1, 0, -1};
+        int[] dc = {1, 0, -1, 0};
+        if(choice == 1) {
+            fillSpiral(mat, n, dr, dc);
+        }
+        else {
+            fillSpiral(mat, n, dc, dr);
+        }
         printMatrix(mat, n);
         sc.close(); 
     }
 
-    private static void fillClockwise(int[][] mat, int n) {
+    public static void fillSpiral(int[][] mat, int n, int[] dr, int[] dc) {
         int val = 1, r = 0, c = 0, dir = 0;
-        int[] dr = {0, 1, 0, -1};
-        int[] dc = {1, 0, -1, 0};
-        while (val <= n * n) {
-            mat[r][c] = val++;
-            int nr = r + dr[dir], nc = c + dc[dir];
-            if (nr < 0 || nr >= n || nc < 0 || nc >= n || mat[nr][nc] != 0) {
-                dir = (dir + 1) % 4;
-                nr = r + dr[dir];
-                nc = c + dc[dir];
-            }
-            r = nr;
-            c = nc;
-        }
-    }
-
-    private static void fillAnticlockwise(int[][] mat, int n) {
-        int val = 1, r = 0, c = 0, dir = 0;
-        int[] dr = {1, 0, -1, 0};
-        int[] dc = {0, 1, 0, -1};
         while (val <= n * n) {
             mat[r][c] = val++;
             int nr = r + dr[dir], nc = c + dc[dir];
