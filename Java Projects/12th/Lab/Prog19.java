@@ -22,6 +22,7 @@ public class Prog19
         for(int i = 0; i < A.length; i++)
             A[i] = i;
         anagram(ch, A, 0);
+        System.out.println("\nTotal number of anagrams: " + count);
         sc.close();
     }
 
