@@ -20,6 +20,7 @@ public class TruthTable {
             }
             System.out.println();
         }
+        sc.close();
         // Implementation for truth table generation would go here
     }
 }
