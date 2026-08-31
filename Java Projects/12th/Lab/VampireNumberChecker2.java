@@ -6,7 +6,8 @@ public class VampireNumberChecker2 {
         String str = scanner.next();
         long n = Long.parseLong(str);
         if (str.length() % 2 != 0) {
-            System.out.println("INVALID!! Please input even digits number");
+            System.out.println("OUTPUT\nINVALID!! Please input even digits number");
+            scanner.close();
             return;
         }
         long start = (long)Math.pow(10, str.length()/2-1), end = start * 10 - 1;
@@ -19,25 +20,29 @@ public class VampireNumberChecker2 {
                     continue;
                 if (checkDigits(str, String.valueOf(i) + String.valueOf(j))) {
                     if (!found) 
-                        System.out.println(n + " is a Vampire number\nCombination:");
-                    System.out.println(Long.parseLong(String.valueOf(i)) + " X " + Long.parseLong(String.valueOf(j)));
+                        System.out.println("OUTPUT\n" + n + " is a Vampire number\nCombination:");
+                    System.out.println("OUTPUT\n" + Long.parseLong(String.valueOf(i)) + " X " + Long.parseLong(String.valueOf(j)));
                     found = true;
                 }
             }
         }
-        if (!found) System.out.println(n + " is not a Vampire number");
+        if (!found) 
+            System.out.println("OUTPUT\n" + n + " is not a Vampire number");
+        scanner.close();
     }
     private static boolean checkDigits(String s1, String s2) {
         boolean[] used = new boolean[s1.length()];
         for (int i = 0; i < s2.length(); i++) {
             boolean match = false;
-            for (int k = 0; k < s1.length(); k++) {
-                if (!used[k] && s1.charAt(k) == s2.charAt(i)) {
-                    used[k] = match = true;
+            for (int j = 0; j < s1.length(); j++) {
+                if (!used[j] && s1.charAt(j) == s2.charAt(i)) {
+                    used[j] = true;
+                    match = true;
                     break;
                 }
             }
-            if (!match) return false;
+            if (!match) 
+                return false;
         }
         return true;
     }
