@@ -1,3 +1,4 @@
+import Utils.Calc;
 import java.util.Scanner;
 
 public class Goldbach {
@@ -16,7 +17,7 @@ public class Goldbach {
         }
         System.out.println("PRIME PAIRS ARE: ");
         for(int i=1, j=n-1; i<=j; i++, j--) {
-            if(Utils.isPrime(i) && Utils.isPrime(j)) {
+            if(Calc.isPrime(i) && Calc.isPrime(j)) {
                 System.out.println(i + " + " + j + " = " + n);
             }
         }

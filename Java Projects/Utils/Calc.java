@@ -1,4 +1,6 @@
-public class Utils {
+package Utils;
+
+public class Calc {
     public static int digitCount(int number) {
         return String.valueOf(Math.abs(number)).length();
     }

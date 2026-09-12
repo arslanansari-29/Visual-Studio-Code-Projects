@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import Utils.Calc;
 
 public class KaprekarLab {
     public static void main(String[] args) {
@@ -28,6 +29,6 @@ public class KaprekarLab {
     }
 
     static boolean isKaprekar(int n) {
-        return n==(n*n/((int)Math.pow(10,Utils.digitCount(n))) + n*n%((int)Math.pow(10,Utils.digitCount(n))));
+        return n==(n*n/((int)Math.pow(10,Calc.digitCount(n))) + n*n%((int)Math.pow(10,Calc.digitCount(n))));
     }
 }
